@@ -70,7 +70,7 @@
 .small { font-family: var(--font-sans); font-size: 14px; line-height: 22px; font-weight: 400; }
 .label { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0.14em; }
 .caption { font-family: var(--font-sans); font-size: 12px; line-height: 18px; font-weight: 400; letter-spacing: 0.02em; }
-@font-face { font-family: "Cormorant Garamond"; src: url("/fonts/CormorantGaramond-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Cormorant Garamond"; src: url("/fonts/CormorantGaramond-Italic-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
-@font-face { font-family: "Jost"; src: url("/fonts/Jost-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
-@font-face { font-family: "Cinzel"; src: url("/fonts/Cinzel-Variable.woff2") format("woff2"); font-weight: 400 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("../../public/fonts/CormorantGaramond-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("../../public/fonts/CormorantGaramond-Italic-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("../../public/fonts/Jost-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cinzel"; src: url("../../public/fonts/Cinzel-Variable.woff2") format("woff2"); font-weight: 400 900; font-style: normal; font-display: swap; }
