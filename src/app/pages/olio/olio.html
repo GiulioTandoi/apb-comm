@@ -1,0 +1,60 @@
+<app-page-head crumb="nav.oil" eyebrow="oilPage.eyebrow" title="oilPage.title" intro="oilPage.intro" />
+
+<section class="cm-section cm-m-center">
+  <div class="cm-container">
+    <app-varco />
+    <div class="cm-m-olio__cols">
+      <div>
+        <h2 class="cm-heading">{{ 'oil.character' | t }}</h2>
+        <p class="cm-body-l site-mt-4">{{ 'oil.textLong' | t }}</p>
+      </div>
+      <app-profilo-sensoriale />
+      <app-scheda-tecnica />
+    </div>
+  </div>
+</section>
+
+<section class="cm-section cm-section--stone cm-m-center">
+  <div class="cm-container">
+    <span class="cm-eyebrow">{{ 'oilPage.tableEyebrow' | t }}</span>
+    <h2 class="cm-heading">{{ 'oilPage.tableTitle' | t }}</h2>
+    <div class="cm-m-pairings">
+      @for (u of uses; track u.n) {
+        <div class="cm-m-box">
+          <span class="cm-numeral">{{ u.n }}</span>
+          <h3 class="cm-title">{{ u.title | t }}</h3>
+          <p class="cm-body">{{ u.text | t }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="cm-section">
+  <div class="cm-container">
+    <div class="cm-m-center">
+      <span class="cm-eyebrow">{{ 'oilPage.labelEyebrow' | t }}</span>
+      <h2 class="cm-heading">{{ 'oilPage.labelTitle' | t }}</h2>
+    </div>
+    <div class="cm-m-label">
+      <img src="img/schizzi/etichetta-pilieri-fronte.svg" [alt]="'oilPage.labelAlt' | t" width="300" height="420" loading="lazy">
+      <div class="cm-m-box">
+        <span class="cm-eyebrow">{{ 'oilPage.backLabel' | t }}</span>
+        <p class="cm-title site-mb-2">{{ 'oilPage.category' | t }}</p>
+        <p class="cm-small">{{ 'oilPage.categoryText' | t }}</p>
+        <div class="cm-ornament cm-ornament--start"><i></i></div>
+        <dl class="cm-spec">
+          <dt>{{ 'oilPage.originLabel' | t }}</dt><dd>{{ 'oilPage.originValue' | t }}</dd>
+          <dt>{{ 'oil.cultivar' | t }}</dt><dd>Coratina</dd>
+          <dt>{{ 'oil.campaign' | t }}</dt><dd>{{ edition.campaign }}</dd>
+          <dt>{{ 'oilPage.lot' | t }}</dt><dd class="is-todo">L. —</dd>
+          <dt>{{ 'oilPage.bestBefore' | t }}</dt><dd class="is-todo">—</dd>
+          <dt>{{ 'oilPage.content' | t }}</dt><dd>{{ edition.size }}</dd>
+        </dl>
+        <p class="cm-caption site-mt-4">{{ 'oilPage.storage' | t }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-edizione />

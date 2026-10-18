@@ -1,0 +1,76 @@
+/* Corona di Murgia — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surface: #f6f1e7;
+  --surface-raised: #fbf8f2;
+  --surface-stone: #ece3d1;
+  --ink: #23281a;
+  --ink-muted: #59574a;
+  --brand: #3f4a26;
+  --on-brand: #f6f1e7;
+  --brand-deep: #2e3520;
+  --gold: #a98536;
+  --gold-text: #7a5e1f;
+  --hairline: #d9cdb3;
+  --border-strong: #8a7a5a;
+  --focus: #7a5e1f;
+  --light-green: #67af5c;
+  --bouganville: #8f2c55;
+  --overlay: rgba(28, 32, 19, 0.62);
+  --shadow-bottle: 0 32px 48px -28px rgba(28, 32, 19, 0.55);
+}
+[data-theme="dark"] {
+  --surface: #1c2013;
+  --surface-raised: #262b1b;
+  --surface-stone: #2f3520;
+  --ink: #f2ecdf;
+  --ink-muted: #bdb6a1;
+  --brand: #d6c08a;
+  --on-brand: #1c2013;
+  --brand-deep: #14170d;
+  --gold: #c9a65a;
+  --gold-text: #d8bb76;
+  --hairline: #3d4429;
+  --border-strong: #7d8262;
+  --focus: #d8bb76;
+  --light-green: #67af5c;
+  --bouganville: #e58bb0;
+  --overlay: rgba(10, 12, 7, 0.7);
+  --shadow-bottle: 0 32px 48px -28px rgba(28, 32, 19, 0.55);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-pill: 999px;
+  --chamfer-sm: 6px;
+  --chamfer-md: 14px;
+  --chamfer-lg: 28px;
+  --font-display: "Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
+  --font-sans: Jost, "Futura PT", "Century Gothic", system-ui, sans-serif;
+  --font-inscription: Cinzel, "Trajan Pro", Georgia, serif;
+}
+.display-xl { font-family: var(--font-display); font-size: 72px; line-height: 76px; font-weight: 500; letter-spacing: -0.01em; }
+.display-l { font-family: var(--font-display); font-size: 52px; line-height: 58px; font-weight: 500; }
+.heading { font-family: var(--font-display); font-size: 36px; line-height: 42px; font-weight: 500; }
+.quote { font-family: var(--font-display); font-size: 28px; line-height: 38px; font-weight: 400; font-style: italic; }
+.title { font-family: var(--font-display); font-size: 22px; line-height: 28px; font-weight: 600; }
+.eyebrow { font-family: var(--font-inscription); font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: 0.22em; }
+.numeral { font-family: var(--font-inscription); font-size: 40px; line-height: 44px; font-weight: 500; letter-spacing: 0.04em; }
+.body-l { font-family: var(--font-sans); font-size: 18px; line-height: 30px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 22px; font-weight: 400; }
+.label { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0.14em; }
+.caption { font-family: var(--font-sans); font-size: 12px; line-height: 18px; font-weight: 400; letter-spacing: 0.02em; }
+@font-face { font-family: "Cormorant Garamond"; src: url("/fonts/CormorantGaramond-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("/fonts/CormorantGaramond-Italic-Variable.woff2") format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("/fonts/Jost-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cinzel"; src: url("/fonts/Cinzel-Variable.woff2") format("woff2"); font-weight: 400 900; font-style: normal; font-display: swap; }

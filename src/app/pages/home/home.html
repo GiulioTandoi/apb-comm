@@ -1,0 +1,77 @@
+<!-- Apertura: la foto dei pilieri a tutto schermo -->
+<section class="cm-hero" data-theme="dark">
+  <div class="cm-hero__media">
+    <img src="img/agriturismo-pilieri.jpg" [alt]="'hero.imageAlt' | t" width="1800" height="1200" fetchpriority="high">
+  </div>
+  <div class="cm-container cm-hero__content">
+    <div class="cm-hero__text">
+      <span class="cm-eyebrow">{{ 'common.eyebrowProduct' | t }}</span>
+      <h1 class="cm-display-xl">{{ 'hero.titleBefore' | t }} <span class="cm-m-mark">{{ 'hero.titleMark' | t }}</span>{{ 'hero.titleAfter' | t }}</h1>
+      <p class="cm-body-l">{{ 'hero.text' | t }}</p>
+      <div class="cm-actions">
+        <a class="cm-m-btn cm-m-btn--light" routerLink="/olio">{{ 'common.discoverOil' | t }}</a>
+        <a class="cm-link" routerLink="/storia">{{ 'common.ourStory' | t }}</a>
+      </div>
+    </div>
+  </div>
+  <span class="cm-hero__caption">{{ 'hero.caption' | t }}</span>
+</section>
+
+<!-- La storia e i tre pilieri -->
+<section class="cm-section" id="storia">
+  <div class="cm-container">
+    <div class="cm-storia__intro">
+      <div>
+        <span class="cm-eyebrow">{{ 'story.eyebrow' | t }}</span>
+        <h2 class="cm-display-l">{{ 'story.title' | t }}</h2>
+      </div>
+      <div>
+        <p class="cm-body-l">{{ 'story.text' | t }}</p>
+        <p class="cm-quote">{{ 'story.quote' | t }}</p>
+        <div class="cm-actions site-mt-5"><a class="cm-link" routerLink="/storia">{{ 'common.readStory' | t }}</a></div>
+      </div>
+    </div>
+    <div class="cm-m-center site-mt-9">
+      <span class="cm-eyebrow">{{ 'story.pillarsEyebrow' | t }}</span>
+      <h3 class="cm-heading">{{ 'story.pillarsTitle' | t }}</h3>
+    </div>
+    <app-tre-pilieri />
+  </div>
+</section>
+
+<!-- L'olio tra i pilieri -->
+<section class="cm-section cm-section--stone cm-m-center" id="olio">
+  <div class="cm-container">
+    <span class="cm-eyebrow">{{ 'oil.eyebrow' | t }}</span>
+    <h2 class="cm-display-l">{{ 'oil.title' | t }}</h2>
+    <app-varco />
+    <div class="cm-m-olio__cols">
+      <div>
+        <h3 class="cm-heading">{{ 'oil.character' | t }}</h3>
+        <p class="cm-body-l site-mt-4">{{ 'oil.text' | t }}</p>
+        <div class="cm-actions site-mt-5">
+          <a class="cm-m-btn" routerLink="/" fragment="edizione">{{ 'common.bookBottle' | t }}</a>
+          <a class="cm-link" routerLink="/olio">{{ 'common.allAboutOil' | t }}</a>
+        </div>
+      </div>
+      <app-profilo-sensoriale />
+      <app-scheda-tecnica />
+    </div>
+  </div>
+</section>
+<img class="cm-m-divider site-divider-stone" src="img/schizzi/schizzo-muretto.svg" alt="" width="1200" height="110">
+
+<app-edizione />
+
+<!-- Agriturismo e B&B -->
+<section class="cm-section cm-m-center" id="ospitalita">
+  <div class="cm-container">
+    <div class="cm-m-agri">
+      <img src="img/schizzi/schizzo-ramo-ulivo.svg" alt="" width="600" height="160">
+      <span class="cm-eyebrow">{{ 'stay.eyebrow' | t }}</span>
+      <h2 class="cm-heading">{{ 'stay.title' | t }}</h2>
+      <p class="cm-body-l">{{ 'stay.text' | t }}</p>
+    </div>
+    <app-ospitalita-cards />
+  </div>
+</section>

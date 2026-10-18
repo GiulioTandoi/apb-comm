@@ -1,0 +1,37 @@
+<header class="cm-header site-header" [class.is-overlay]="overlay()" [attr.data-theme]="overlay() ? 'dark' : null">
+  <div class="cm-container cm-header__bar">
+    <a class="cm-header__logo" routerLink="/" (click)="closeMenu()" aria-label="Corona di Murgia — home">
+      <img [src]="overlay() ? 'img/logo/pilieri-logotipo-orizzontale-pietra.svg' : 'img/logo/pilieri-logotipo-orizzontale-oliva.svg'"
+           alt="Corona di Murgia" width="824" height="240">
+    </a>
+
+    <ul class="cm-nav">
+      <li><a routerLink="/storia" routerLinkActive="is-active">{{ 'nav.story' | t }}</a></li>
+      <li><a routerLink="/olio" routerLinkActive="is-active">{{ 'nav.oil' | t }}</a></li>
+      <li><a routerLink="/ospitalita" routerLinkActive="is-active">{{ 'nav.stay' | t }}</a></li>
+    </ul>
+
+    <div class="cm-header__tools">
+      <span class="cm-lang" role="group" [attr.aria-label]="'nav.language' | t">
+        <button type="button" [class.is-on]="i18n.lang() === 'it'" [attr.aria-pressed]="i18n.lang() === 'it'" (click)="i18n.set('it')">IT</button>
+        <button type="button" [class.is-on]="i18n.lang() === 'en'" [attr.aria-pressed]="i18n.lang() === 'en'" (click)="i18n.set('en')">EN</button>
+      </span>
+      <a class="cm-m-btn cm-m-btn--sm" [class.cm-m-btn--light]="overlay()" routerLink="/" fragment="edizione">{{ 'nav.book' | t }}</a>
+      <button class="cm-burger" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen()"
+              [attr.aria-label]="(menuOpen() ? 'nav.close' : 'nav.menu') | t" aria-controls="menu-mobile">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+@if (menuOpen()) {
+  <nav class="site-menu" id="menu-mobile">
+    <a routerLink="/" (click)="closeMenu()">{{ 'nav.home' | t }}</a>
+    <a routerLink="/storia" (click)="closeMenu()">{{ 'nav.story' | t }}</a>
+    <a routerLink="/olio" (click)="closeMenu()">{{ 'nav.oil' | t }}</a>
+    <a routerLink="/ospitalita" (click)="closeMenu()">{{ 'nav.stay' | t }}</a>
+    <a class="cm-m-btn" routerLink="/" fragment="edizione" (click)="closeMenu()">{{ 'common.bookBottle' | t }}</a>
+    <img class="site-menu__wall" src="img/schizzi/schizzo-muretto.svg" alt="">
+  </nav>
+}

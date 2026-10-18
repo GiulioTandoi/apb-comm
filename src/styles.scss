@@ -1,0 +1,7 @@
+/* Corona di Murgia — stili globali.
+   _tokens.scss: i token del design system (colori Giorno/Notte, spazi, caratteri, @font-face).
+   _corona.scss: le classi del design system (cm-*, tratto a mano cm-m-*), uguali alle anteprime.
+   _site.scss: ciò che serve solo all'app (header fisso, menu mobile, moduli, utilità). */
+@use 'styles/tokens';
+@use 'styles/corona';
+@use 'styles/site';

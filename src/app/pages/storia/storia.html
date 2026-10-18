@@ -1,0 +1,53 @@
+<app-page-head crumb="nav.story" eyebrow="story.eyebrow" title="storyPage.title" intro="storyPage.intro" />
+
+<section class="cm-section">
+  <div class="cm-container cm-m-prose">
+    <p class="cm-body-l">{{ 'storyPage.p1' | t }}</p>
+    <p class="cm-quote">{{ 'story.quote' | t }}</p>
+    <p class="cm-body-l">{{ 'storyPage.p2' | t }}</p>
+  </div>
+  <div class="cm-container">
+    <div class="cm-m-timeline">
+      @for (s of steps; track s.n) {
+        <div class="cm-m-step">
+          <img src="img/schizzi/schizzo-piliere.svg" alt="" width="220" height="600">
+          <div>
+            <span class="cm-numeral">{{ s.n }}</span>
+            <h3 class="cm-title">{{ s.title | t }}</h3>
+            <p class="cm-body">{{ s.text | t }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="cm-section cm-section--stone cm-m-photo">
+  <div class="cm-container cm-m-photo__grid">
+    <figure class="cm-m-print site-m-0">
+      <img src="img/agriturismo-pilieri.jpg" [alt]="'hero.imageAlt' | t" width="1800" height="1200" loading="lazy">
+      <figcaption class="cm-m-note">{{ 'storyPage.printCaption' | t }}</figcaption>
+    </figure>
+    <div>
+      <span class="cm-eyebrow">{{ 'storyPage.landEyebrow' | t }}</span>
+      <h2 class="cm-heading">{{ 'storyPage.landTitle' | t }}</h2>
+      <p class="cm-body-l">{{ 'storyPage.landText' | t }}</p>
+      <div class="cm-facts">
+        @for (f of facts; track f.n) {
+          <div><span class="cm-numeral">{{ f.n }}</span><p class="cm-caption">{{ f.text | t }}</p></div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cm-section cm-m-band cm-m-center">
+  <img class="cm-m-band__bg" src="img/schizzi/schizzo-ramo-ulivo.svg" alt="" width="600" height="160">
+  <div class="cm-container">
+    <h2 class="cm-heading">{{ 'storyPage.ctaTitle' | t }}</h2>
+    <div class="cm-actions site-mt-5 site-justify-center">
+      <a class="cm-m-btn" routerLink="/olio">{{ 'common.discoverOil' | t }}</a>
+      <a class="cm-link" routerLink="/" fragment="edizione">{{ 'nav.book' | t }}</a>
+    </div>
+  </div>
+</section>
