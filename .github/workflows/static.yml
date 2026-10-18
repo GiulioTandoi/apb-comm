@@ -34,7 +34,7 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Build
-        run: npx ng build --base-href /corona-di-murgia/
+        run: npx ng build --base-href /apb-comm/
 
       - name: SPA fallback
         run: cp dist/corona-di-murgia/browser/index.html dist/corona-di-murgia/browser/404.html
